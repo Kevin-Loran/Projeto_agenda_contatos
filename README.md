@@ -2,7 +2,7 @@
 
 Este projeto é uma aplicação web fullstack para gerenciamento de contatos pessoais. Foi o primeiro projeto que desenvolvi do zero com Node.js e Express, aplicando conceitos de autenticação, segurança, MVC e deploy em produção na Google Cloud.
 
-A parte que mais me desafiou foi o deploy — configurar Nginx, PM2 e resolver os problemas com Webpack e bundle em produção foi onde aprendi de verdade.
+A parte que mais me desafiou foi o deploy configurar Nginx, PM2 e resolver os problemas com Webpack e bundle em produção foi onde aprendi de verdade.
 
 Acesse a aplicação rodando: http://34.95.208.101
 
@@ -97,7 +97,7 @@ ProjetoAgenda/
 
 Esse foi um ponto que levei a sério desde o início. As senhas são criptografadas com bcryptjs usando salt único por requisição. Todos os formulários têm token CSRF. Os headers HTTP são configurados com helmet. As variáveis sensíveis como string de conexão e secrets ficam isoladas no arquivo .env e nunca sobem para o repositório.
 
-As rotas de contato são protegidas por um middleware de autenticação — sem login, o usuário é redirecionado para a home com uma mensagem de erro.
+As rotas de contato são protegidas por um middleware de autenticação sem login, o usuário é redirecionado para a home com uma mensagem de erro.
 
 ---
 
